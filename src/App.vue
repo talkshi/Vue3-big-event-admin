@@ -5,8 +5,8 @@ const userStore = useUserStore()
 
 <template>
   <div>
-    <el-button @click="userStore.setToken">Click me</el-button>
-    <el-button @click="userStore.removeToken">Click me</el-button>
+    <el-button @click="userStore.setToken('myname')">Click me</el-button>
+    <el-button @click="userStore.removeToken()">Click me</el-button>
     {{ userStore }}
   </div>
 </template>
