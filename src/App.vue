@@ -1,7 +1,14 @@
-<script setup></script>
+<script setup>
+import { useUserStore } from '@/stores/modules/user'
+const userStore = useUserStore()
+</script>
 
 <template>
-  <div></div>
+  <div>
+    <el-button @click="userStore.setToken">Click me</el-button>
+    <el-button @click="userStore.removeToken">Click me</el-button>
+    {{ userStore }}
+  </div>
 </template>
 
 <style scoped></style>
