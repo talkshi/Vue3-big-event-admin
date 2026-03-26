@@ -1,13 +1,13 @@
 import axios from 'axios'
 import { useUserStore } from '@/stores'
 import { ElMessage } from 'element-plus'
-import { router } from '@/router'
-const baseUrl = 'http://big-event-vue-api-t.itheima.net'
+import router from '@/router'
+const baseURL = 'http://big-event-vue-api-t.itheima.net'
 
 const instance = axios.create({
   //基地址，超时时间
-  baseUrl,
-  timeOut: 5000
+  baseURL,
+  timeout: 5000
 })
 
 // 添加请求拦截器
